@@ -38,3 +38,4 @@ AddBlock.addEventListener("click", function(e){
             generalBlock.append(NewTitle);
         });
     });
+    

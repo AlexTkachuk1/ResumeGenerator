@@ -63,3 +63,4 @@ let Submit =  document.getElementById('submit');
         Text.innerHTML += "\n Год введен не корректно , пожалуйста перепроверьте данные и попробуйте ввести снова." ;
     }
     });
+    
