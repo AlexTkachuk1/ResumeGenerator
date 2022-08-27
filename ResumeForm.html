@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="/ResumeForm.css">
+
+<h2>Резюме</h2>
+ 
+<form asp-action="AddData" asp-controller="User"  asp-antiforgery="true">
+    <div class="form_content">
+        <div class="content">
+            <div id="alerts">
+                <h3 id="text"></h3>
+            </div>
+            <div>
+                Url: <input type="text" name="Url" id="Url"/>
+            </div>
+            <div>
+                Имя: <input type="text" name="FirstName" id="FirstName"/>
+            </div>
+            <div>
+                Фамилия: <input type="text" name="LastName" id="LastName"/>
+            </div>
+            <div>
+                Oтчество: <input type="text" name="MiddleName" id="MiddleName"/>
+            </div>
+            <div>
+                Электронная почта: <input type="text" name="Email" id="Email"/>
+            </div>
+            <div>
+                Телефон: <input type="text" name="Telephone" id="Telephone"/>
+            </div>
+            <div>
+                Год рождения: <input type="date" name="YearOfBirth" id="YearOfBirth"/>
+            </div>
+            <div id="Blocks"></div>
+            <div>
+                <input id="submit" type="submit" value= "Submit" />
+            </div>
+            <div>
+                Имя блока: <input type="text" name="BlockName" id="BlockName"/>
+            </div>
+            <div>
+                <input id="addBlock" type="submit" value= "Add Block" />
+            </div>
+        </div>
+        ***
+    </div>
+</form>
+<script src="/ResumeForm.js"></script>
+<script src="/AddBlocks.js"></script>
