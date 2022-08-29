@@ -6,13 +6,10 @@ let Submit =  document.getElementById('submit');
     let Alerts = document.getElementById('alerts');
 
     let Url = document.getElementById('Url').value;
-
+    
     if(Url.length > 0){
-        var div  = document.createElement("div");
-        var img = document.createElement("img");
-        img.src = Url;
-        div.append(img);
-        Alerts.append(div);
+        let Img = document.getElementById('img');
+        Img.src = Url;
     }
 
     let FirstName = document.getElementById('FirstName').value;
@@ -57,9 +54,11 @@ let Submit =  document.getElementById('submit');
         Text.innerHTML += "\n Телефон введен не корректно , пожалуйста перепроверьте данные и попробуйте ввести снова.";
     }
 
-    let YearOfBirth = document.getElementById('YearOfBirth').value;;
+    let YearOfBirth = document.getElementById('YearOfBirth').value;
+    let yearOfBirth =  new Date(YearOfBirth);
     let DateNow = new Date();
-    if(YearOfBirth < 1920 ||YearOfBirth > DateNow){
+    let MinimumDate = new Date('01 01 1920');
+    if(yearOfBirth < MinimumDate || yearOfBirth > DateNow){
         Text.innerHTML += "\n Год введен не корректно , пожалуйста перепроверьте данные и попробуйте ввести снова." ;
     }
     });
