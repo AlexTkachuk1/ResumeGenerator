@@ -44,7 +44,7 @@ let Submit =  document.getElementById('submit');
     let Email = document.getElementById('Email').value;
 
     if(Email.length<=5 || Email.length>64 ){
-        Text.innerHTML += "\n Почта введенеа не корректно , пожалуйста перепроверьте данные и попробуйте ввести снова.";
+        Text.innerHTML += "\n Почта введена не корректно , пожалуйста перепроверьте данные и попробуйте ввести снова.";
     }
 
     let Telephone = document.getElementById('Telephone').value;
